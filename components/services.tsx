@@ -43,7 +43,7 @@ export function Services() {
       <div className="flex flex-col md:flex-row items-center mt-12">
         <div className="w-full max-w-lg p-6 order-2 md:order-1">
           <p className="text-black">
-          We prioritize our clients' needs, offering customized solutions that ensure a seamless migration experience to the UAE. Our dedicated team carefully navigates every aspect of the process, from visa applications to settling in. By understanding individual requirements, we create tailored plans that minimize stress and maximize efficiency. Our commitment to excellence guarantees a smooth transition, allowing clients to focus on their new opportunities. Trust us to make your move to the UAE as flawless as possible.
+          We prioritize our clients needs, offering customized solutions that ensure a seamless migration experience to the UAE. Our dedicated team carefully navigates every aspect of the process, from visa applications to settling in. By understanding individual requirements, we create tailored plans that minimize stress and maximize efficiency. Our commitment to excellence guarantees a smooth transition, allowing clients to focus on their new opportunities. Trust us to make your move to the UAE as flawless as possible.
           </p>
           <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 mt-4">
             Click here
@@ -83,7 +83,7 @@ export function Services() {
 
         <div className="w-full max-w-lg p-6 order-2">
           <p className="text-black">
-          Our results consistently exceed expectations, reflecting our commitment to excellence. We take pride in delivering outstanding service that leaves clients delighted. Don't just take our word for it—explore our customer testimonials to see their experiences. Discover how we’ve made a positive impact on their journeys.
+          Our results consistently exceed expectations, reflecting our commitment to excellence. We take pride in delivering outstanding service that leaves clients delighted. Dont just take our word for it—explore our customer testimonials to see their experiences. Discover how we have made a positive impact on their journeys.
           </p>
           <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 mt-4">
             Click here

@@ -38,10 +38,10 @@ const HeroSlider = () => {
           <div className="absolute inset-0 flex flex-col items-start justify-center text-left px-4 mx-10">
             <h1 className="text-white font-bold text-2xl sm:text-2xl mb-4 sm:mb-8">
               Revolutionize Your Wealth Growth Strategy with <br />
-              Elite Estates' Cutting-Edge Innovations!
+              Elite Estates Cutting-Edge Innovations!
             </h1>
             <p className="text-white text-base sm:text-lg max-w-md mb-4 sm:mb-6">
-              Whether you’re a first-time buyer or an experienced investor, we provide tailored solutions to help you achieve your financial goals with confidence.
+              Whether you are a first-time buyer or an experienced investor, we provide tailored solutions to help you achieve your financial goals with confidence.
               Join Elite Estates and unlock the potential of your real estate investments today!
             </p>
             <button
