@@ -1,5 +1,5 @@
 "use client"; // Ensure you keep this for client components
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 interface HeaderProps {
@@ -9,6 +9,7 @@ interface HeaderProps {
 export function Header({ openModal }: HeaderProps) { // Use the prop here
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isInvestmentOpen, setIsInvestmentOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false); // New state to track mobile view
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -17,6 +18,25 @@ export function Header({ openModal }: HeaderProps) { // Use the prop here
   const toggleInvestments = () => {
     setIsInvestmentOpen(!isInvestmentOpen);
   };
+
+  useEffect(() => {
+    // Check if the window object is available to determine if it's mobile view
+    const mediaQuery = window.matchMedia('(max-width: 640px)');
+    const handleMediaQueryChange = (event: MediaQueryListEvent) => {
+      setIsMobile(event.matches);
+    };
+
+    // Set initial value
+    setIsMobile(mediaQuery.matches);
+    
+    // Add event listener
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
+
+    // Cleanup event listener on unmount
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+    };
+  }, []);
 
   return (
     <div className="flex sm:py-0 py-2">
@@ -36,7 +56,7 @@ export function Header({ openModal }: HeaderProps) { // Use the prop here
           </button>
         </div>
         
-        {(isMenuOpen || !window.matchMedia('(max-width: 640px)').matches) && (
+        {(isMenuOpen || !isMobile) && ( // Use isMobile state
           <ul className="flex sm:flex-col flex-row gap-4 sm:mt-12 sm:text-base text-sm sm:ml-2">
             <li className="hover:text-gray-300 cursor-pointer">
               <Link href="/">About</Link>
@@ -64,7 +84,7 @@ export function Header({ openModal }: HeaderProps) { // Use the prop here
           </ul>
         )}
 
-        {(isMenuOpen || !window.matchMedia('(max-width: 640px)').matches) && (
+        {(isMenuOpen || !isMobile) && ( // Use isMobile state
           <ul className="flex sm:flex-col flex-row gap-4 sm:mt-16 sm:ml-2 sm:items-start justify-center items-center sm:text-base text-sm">
             <li className="hover:text-gray-300 cursor-pointer">
               <a href="https://your-faq-url.com" target="_blank" rel="noopener noreferrer" className="hover:underline">FAQs</a>
