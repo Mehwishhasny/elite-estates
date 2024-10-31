@@ -29,14 +29,14 @@ export default function InvestUAE() {
                         className="z-0"
                     />
                     <h1 className="absolute z-10 bg-gray-800 text-white m-1 text-center font-extrabold text-2xl animate-color-change">
-                        Invest in the UAE – Unlock Boundless Growth Opportunities
+                        Invest in the UAE: Unlock Boundless Growth Opportunities
                     </h1>
                 </div>
                 <h1 className="text-blue-900 font-extrabold text-2xl mb-4">
                     Elite Estates: Your Gateway to Investment Success in the UAE
                 </h1>
                 <p className="text-black text-left p-4 mb-10">
-                    Investments in the UAE have been steadily rising, driven by the country’s thriving economy and the influx of businesses and investors...
+                    Investments in the UAE have been steadily rising, driven by the countrys thriving economy and the influx of businesses and investors...
                 </p>
 
                 <h2 className="text-gray-600 font-bold text-xl mb-4">1. Customized Investment Strategies:</h2>
@@ -56,7 +56,7 @@ export default function InvestUAE() {
 
                 <h1 className="text-blue-900 font-bold text-2xl mb-4">Invest in Dubai Property for Financial Success</h1>
                 <p className="text-black text-left p-4 mb-4">
-                    Dubai’s real estate market presents a lucrative opportunity for investors seeking to generate rental income...
+                    Dubais real estate market presents a lucrative opportunity for investors seeking to generate rental income...
                 </p>
 
                 <h2 className="text-gray-700 font-bold text-xl mb-4">1. High Rental Yields:</h2>
@@ -66,12 +66,12 @@ export default function InvestUAE() {
 
                 <h2 className="text-gray-700 font-bold text-xl mb-4">2. Steady Population Growth:</h2>
                 <p className="text-black text-left p-4">
-                    - Dubai’s population is projected to reach 4.9 million by 2020...
+                    - Dubais population is projected to reach 4.9 million by 2020...
                 </p>
 
                 <h2 className="text-gray-700 font-bold text-xl mb-4">3. Strong Economy and Pro-Business Environment:</h2>
                 <p className="text-black text-left p-4">
-                    - Dubai’s diverse range of industries...
+                    - Dubais diverse range of industries...
                 </p>
 
                 <h1 className="text-blue-900 font-bold text-2xl mb-4">Investment Options in Dubai Property:</h1>

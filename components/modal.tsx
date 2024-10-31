@@ -24,13 +24,12 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
             placeholder="Your Email"
             className="w-full p-2 mb-3 border rounded"
           />
-          <input
+       <input
             type="date"
-            placeholder="Tour Date"
             className="w-full p-2 mb-3 border rounded"
           />
           <button type="submit" className="bg-blue-500 text-white p-2 rounded">
-            Submit
+            Book a Tour
           </button>
         </form>
         <button onClick={onClose} className="text-red-500 mt-4">Close</button>
