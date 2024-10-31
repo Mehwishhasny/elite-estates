@@ -9,8 +9,8 @@ import { Media } from '@/components/sociallinks';
 import { Businesses } from '@/components/business';
 import { Services } from '@/components/services';
 import { Strategy } from '@/components/strategy';
-import Modal from '@/components/Modal';
-import SignUpModal from '@/components/SignUpModal';
+import Modal from '../components/Modal';
+import SignUpModal from '../components/SignUpModal';
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
