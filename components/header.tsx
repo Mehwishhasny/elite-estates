@@ -40,7 +40,7 @@ export function Header({ openModal }: HeaderProps) { // Use the prop here
 
   return (
     <div className="flex sm:py-0 py-2">
-      <div className="fixed sm:left-0 sm:top-0 sm:h-full sm:w-40 w-[320px] h-[85px] bg-gray-800 text-white z-10">
+      <div className="fixed sm:left-0 sm:top-0 sm:h-full sm:w-40 w-full h-[85px] bg-gray-800 text-white z-10">
         <div className="flex justify-between items-center">
           <h1 className="sm:text-lg text-sm sm:mt-4 ml-2">
             <Link href="/">Elite Estates</Link>
