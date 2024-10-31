@@ -1,8 +1,11 @@
-import Link from 'next/link';
+{/*
+    import Link from 'next/link';
 import { Header } from '@/components/header';
 import { Media } from '@/components/sociallinks';
 import { Footer } from '@/components/footer';
 import Image from 'next/image';
+import Modal from '@/components/Modal';
+import SignUpModal from '@/components/SignUpModal';
 
 export default function About() {
     return (
@@ -88,3 +91,4 @@ export default function About() {
         </div>
     );
 }
+*/}

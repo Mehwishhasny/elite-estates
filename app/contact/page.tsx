@@ -1,4 +1,5 @@
-import Link from 'next/link';
+{/*
+    import Link from 'next/link';
 import { Header } from '@/components/header';
 import { Media } from '@/components/sociallinks';
 import { Footer } from '@/components/footer';
@@ -78,3 +79,4 @@ export default function About() {
         </div>
     );
 }
+*/}
