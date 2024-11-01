@@ -4,7 +4,6 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Media } from '@/components/sociallinks';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function AboutUs() {
     const openModal = () => {
