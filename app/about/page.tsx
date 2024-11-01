@@ -69,13 +69,15 @@ Moreover, their financial experts work closely with each client, ensuring that e
 </p>
 
 <h2 className="text-blue-900 font-bold sm:text-2xl text-xl mb-4 sm:mt-6 mt-2">Why Choose Elite Estates?</h2>
-<h2 className="text-gray-600 font-bold text-xl mb-4">All-In-One Services</h2> <p className="text-black font-bold text-center p-4">Elite Estates provides an integrated portfolio of services, allowing you to access everything you need in one place. From real estate investment to property management, they streamline the decision-making process and simplify your financial journey.</p>
+
+<h2 className="text-gray-600 font-bold text-xl mb-4">All-In-One Services</h2> 
+<p className="text-black font-bold text-center p-4">Elite Estates provides an integrated portfolio of services, allowing you to access everything you need in one place. From real estate investment to property management, they streamline the decision-making process and simplify your financial journey.</p>
 <h2 className="text-gray-600 font-bold text-xl mb-4">Bespoke Solutions</h2> 
 <p className="text-black font-bold text-center p-4">No two clients are alike and neither are their financial needs. Elite Estates takes the time to understand each individuals circumstances, crafting unique strategies that are perfectly aligned with your goals.</p>
 </p>
 
 <h2 className="text-gray-600 font-bold text-xl mb-4">A Foundation of Trust</h2> 
-<p className="text-black font-bold text-center p-4">Built on transparency and ethical practices Elite Estates has cultivated lasting relationships with clients who value integrity and accountability. Their client-focused approach ensures that you receive advice and recommendations rooted in trust.
+<p className="text-black font-bold text-center p-4">Built on transparency and ethical practices Elite Estates has cultivated lasting relationships with clients who value integrity and accountability. Their client-focused approach ensures that you receive advice and recommendations rooted in trust.</p>
 
 <h1 className="text-blue-900 font-bold sm:text-2xl text-xl mb-4 sm:mt-6 mt-2">Conclusion</h1>
 <p className="text-black font-bold text-center p-4">Achieve Financial Success with Elite Estates
