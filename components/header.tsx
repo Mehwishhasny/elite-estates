@@ -84,7 +84,7 @@ export function Header({ openModal }: HeaderProps) {
           </ul>
         )}
 
-        {(isMenuOpen || !isMobile) && ( // Use isMobile state
+        {(isMenuOpen || !isMobile) && ( 
           <ul className="flex sm:flex-col flex-row gap-4 sm:mt-16 sm:ml-2 sm:items-start justify-center items-center sm:text-base text-sm">
             <li className="hover:text-gray-300 cursor-pointer">
               <a href="https://your-faq-url.com" target="_blank" rel="noopener noreferrer" className="hover:underline">FAQs</a>

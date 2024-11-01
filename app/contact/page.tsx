@@ -4,20 +4,23 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Media } from '@/components/sociallinks';
 import Image from 'next/image';
+import Modal from '@/components/modal';
+import SignUpModal from '@/components/signupModal';
+import { useState } from 'react';
 
-export default function AboutUs() {
-    const openModal = () => {
-     
-    };
-
-    const openSignUpModal = () => {
-        
-    };
-
+export default function ContactUs() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false); 
+  
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+    
+    const openSignUpModal = () => setIsSignUpModalOpen(true); 
+    const closeSignUpModal = () => setIsSignUpModalOpen(false);
     return (
         <div>
-            <Header openModal={openModal} />
-            <Media openModal={openModal} openSignUpModal={openSignUpModal} />
+    <Header openModal={openModal} />
+    <Media openModal={openModal} openSignUpModal={openSignUpModal} />
 
             <div className="mx-auto sm:mt-20 px-4 py-20 text-center justify-center max-w-screen-lg">
                 <div className="relative w-full h-[400px]">
@@ -64,6 +67,10 @@ export default function AboutUs() {
                             </button>
                             </form>
                             </div>
+
+                            <Modal isOpen={isModalOpen} onClose={closeModal} />
+                            <SignUpModal isOpen={isSignUpModalOpen} onClose={closeSignUpModal} />
+
             <Footer />
 
             <a href="https://wa.me/1234567890?text=Hello%20there!" target="_blank" rel="noopener noreferrer">

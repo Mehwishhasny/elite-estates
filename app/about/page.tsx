@@ -3,22 +3,27 @@
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Media } from '@/components/sociallinks';
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Modal from '@/components/modal';
+import SignUpModal from '@/components/signupModal';
 
 export default function AboutUs() {
-    const openModal = () => {
-     
-    };
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false); 
 
-    const openSignUpModal = () => {
-        
-    };
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+  
+  const openSignUpModal = () => setIsSignUpModalOpen(true); 
+  const closeSignUpModal = () => setIsSignUpModalOpen(false);
 
     return (
         <div>
-            <Header openModal={openModal} />
-            <Media openModal={openModal} openSignUpModal={openSignUpModal} />
+          <Header openModal={openModal} />
+          <Media openModal={openModal} openSignUpModal={openSignUpModal} />
+
 
             <div className="mx-auto sm:mt-20 px-4 py-20 text-center justify-center max-w-screen-lg">
                 <div className="relative w-full h-[400px]">
@@ -75,6 +80,10 @@ Contact Elite Estates today to discover how they can help you unlock the potenti
               <Link href="/contact">Contact Us</Link>
             </button>
             </div>
+
+            <Modal isOpen={isModalOpen} onClose={closeModal} />
+            <SignUpModal isOpen={isSignUpModalOpen} onClose={closeSignUpModal} />
+            
             <Footer />
 
             <a href="https://wa.me/1234567890?text=Hello%20there!" target="_blank" rel="noopener noreferrer">
@@ -90,5 +99,6 @@ Contact Elite Estates today to discover how they can help you unlock the potenti
         </p>
       </a>
         </div>
+      
     );
-}
+  };
