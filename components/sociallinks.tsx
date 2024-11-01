@@ -8,7 +8,7 @@ interface MediaProps {
 
 export function Media({ openModal, openSignUpModal }: MediaProps) {
   return (
-    <div className="bg-blue-900 sm:w-[1150px] w-full h-[80px] flex justify-between items-center sm:absolute mx-auto mt-20 sm:mt-2 sm:mb-12 mb-2 rounded-lg sm:right-5">
+    <div className="bg-blue-900 sm:w-[1150px] w-[310px] h-[80px] flex justify-between items-center sm:absolute mx-auto mt-20 sm:mt-2 sm:mb-12 mb-2 rounded-lg sm:right-5">
       <div className="flex sm:flex-row flex-col sm:absolute sm:p-5 p-1 space-x-4 sm:right-0 top-0">
         <div className="sm:mr-4 mb-2 ml-4">
           <button

@@ -25,8 +25,8 @@ const HeroSlider = () => {
   }, []);
 
   return (
-    <div className="sm:mt-32 mx-auto p-5 flex sm:justify-end justify-center items-center sm:h-screen relative">
-      <div className="sm:absolute w-full sm:w-[1150px] h-[500px] sm:h-[700px]">
+    <div className="sm:mt-32 mx-2 sm:mx-0 p-5 flex sm:justify-end justify-center items-center sm:h-screen relative">
+      <div className="sm:absolute w-full sm:w-[1150px] h-[550px] sm:h-[700px]">
         <Image
           src={images[currentIndex]}
           alt="Hero Image"
@@ -36,7 +36,7 @@ const HeroSlider = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 rounded-lg">
           <div className="absolute inset-0 flex flex-col items-start justify-center text-left px-4 mx-10">
-            <h1 className="text-white font-bold text-2xl sm:text-2xl mb-4 sm:mb-8">
+            <h1 className="text-white font-bold text-2xl sm:text-2xl mb-0 sm:mb-8 sm:mt-0 mt-2">
               Revolutionize Your Wealth Growth Strategy with <br />
               Elite Estates Cutting-Edge Innovations!
             </h1>

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export function Services() {
   return (
-    <div className="min-h-screen bg-white flex flex-col justify-center items-center sm:ml-64 max-w-6xl sm:mb-10">
+    <div className="min-h-screen bg-white flex flex-col justify-center items-center sm:ml-64 max-w-6xl sm:mb-10 sm:mx-0 mx-4">
       <h1 className="text-blue-800 font-bold sm:text-3xl text-xl mt-10 text-center">
         OUR EXPERT BUSINESS OFFERINGS
       </h1>
@@ -12,7 +12,7 @@ export function Services() {
 
       <div className="mt-8 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
 
-        {/* First Service */}
+    
         <div className="flex flex-col md:flex-row items-center">
           <div className="relative max-w-lg bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden md:mr-6">
             <Image

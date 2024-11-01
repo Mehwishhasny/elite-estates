@@ -1,15 +1,15 @@
-"use client"; // Ensure you keep this for client components
+"use client"; 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 interface HeaderProps {
-  openModal: () => void; // Define the prop type
+  openModal: () => void; 
 }
 
-export function Header({ openModal }: HeaderProps) { // Use the prop here
+export function Header({ openModal }: HeaderProps) { 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isInvestmentOpen, setIsInvestmentOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false); // New state to track mobile view
+  const [isMobile, setIsMobile] = useState(false); 
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -20,19 +20,19 @@ export function Header({ openModal }: HeaderProps) { // Use the prop here
   };
 
   useEffect(() => {
-    // Check if the window object is available to determine if it's mobile view
+  
     const mediaQuery = window.matchMedia('(max-width: 640px)');
     const handleMediaQueryChange = (event: MediaQueryListEvent) => {
       setIsMobile(event.matches);
     };
 
-    // Set initial value
+
     setIsMobile(mediaQuery.matches);
     
-    // Add event listener
+  
     mediaQuery.addEventListener('change', handleMediaQueryChange);
 
-    // Cleanup event listener on unmount
+
     return () => {
       mediaQuery.removeEventListener('change', handleMediaQueryChange);
     };
@@ -56,10 +56,10 @@ export function Header({ openModal }: HeaderProps) { // Use the prop here
           </button>
         </div>
         
-        {(isMenuOpen || !isMobile) && ( // Use isMobile state
+        {(isMenuOpen || !isMobile) && ( 
           <ul className="flex sm:flex-col flex-row gap-4 sm:mt-12 sm:text-base text-sm sm:ml-2">
             <li className="hover:text-gray-300 cursor-pointer">
-              <Link href="/">About</Link>
+              <Link href="/about">About</Link>
             </li>
             <li className="cursor-pointer">
               <div className="flex items-center justify-between" onClick={toggleInvestments}>
@@ -79,7 +79,7 @@ export function Header({ openModal }: HeaderProps) { // Use the prop here
             </li>
             <li className="hover:text-gray-300 cursor-pointer">Blogs</li>
             <li className="hover:text-gray-300 cursor-pointer" onClick={openModal}>
-              <Link href="#">Contact Us</Link>
+              <Link href="/contact">Contact Us</Link>
             </li>
           </ul>
         )}

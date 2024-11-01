@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export function Footer() {
     return (
-        <div className="flex flex-col w-full sm:w-[1150px] sm:h-[350px] text-white justify-between items-center relative sm:left-20 left-0 mx-auto mt-0 mb-2 rounded-lg bg-gray-800">
+        <div className="flex flex-col w-full sm:w-[1150px] sm:h-[350px] text-white justify-between items-center relative sm:left-20 left-0 mx-auto mt-0 sm:mb-4 mb-2 rounded-lg bg-gray-800">
             <div className="flex flex-col sm:flex-row justify-between w-full px-4">
                 <div className="flex-col items-center m-2 mt-4">
                     <iframe
@@ -34,13 +34,13 @@ export function Footer() {
                 </div>
             </div>
 
-            <div className="flex space-x-8 items-center justify-center sm:mt-4">
+            <div className="flex sm:space-x-8 space-x-2 items-center justify-center sm:mt-4">
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                     <Image
                         src="/images/fb.png"
                         alt="Facebook Icon"
                         width={40}
-                        height={40}
+                        height={30}
                         className="hover:opacity-80 transition-opacity duration-300"
                     />
                 </a>
@@ -59,7 +59,7 @@ export function Footer() {
                     <Image
                         src="/images/twitter.png"
                         alt="Twitter Icon"
-                        width={50}
+                        width={40}
                         height={50}
                         className="hover:opacity-80 transition-opacity duration-300"
                     />
@@ -69,8 +69,8 @@ export function Footer() {
                     <Image
                         src="/images/linkedin.png"
                         alt="LinkedIn Icon"
-                        width={40}
-                        height={40}
+                        width={30}
+                        height={30}
                         className="hover:opacity-80 transition-opacity duration-300"
                     />
                 </a>

@@ -14,10 +14,10 @@ export function Businesses() {
           }
         });
       },
-      { threshold: 0.1 } // triggers when 10% of the element is visible
+      { threshold: 0.1 } 
     );
 
-    const currentSection = sectionRef.current; // Copy the ref value to a stable variable
+    const currentSection = sectionRef.current; 
     if (currentSection) {
       observer.observe(currentSection);
     }
@@ -38,7 +38,7 @@ export function Businesses() {
     >
       <div className="max-w-6xl sm:px-6">
         <h1 className="sm:text-3xl text-xl text-blue-800 font-bold p-4 sm:mt-10 text-center">
-          Business in the UAE is Booming – Be a Part of It and Elevate Your Success!
+          Business in the UAE is Booming , Be a Part of It and Elevate Your Success!
         </h1>
 
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -48,7 +48,7 @@ export function Businesses() {
               alt: 'MF Investments Logo',
               title: 'MF INVESTMENTS',
               description: 'Assisting in investments and helping our clients make the most of their money and create wealth.'
-            },
+        },
             {
               image: '/images/logo2.jpg',
               alt: 'AIZ Real Estate Logo',
@@ -71,7 +71,7 @@ export function Businesses() {
               image: '/images/logo5.png',
               alt: 'Magnificent Foodstuff Trading Logo',
               title: 'MAGNIFICENT FOODSTUFF TRADING LLC',
-              description: 'Trusted supplier of high-quality food and beverage supplies.' // Fixed typo here
+              description: 'Trusted supplier of high-quality food and beverage supplies.' 
             },
             {
               image: '/images/logo6.png',
@@ -80,7 +80,7 @@ export function Businesses() {
               description: 'Floor and tiling building works establishment based in Dubai.'
             }
           ].map(({ image, alt, title, description }) => (
-            <div key={title} className="max-w-lg mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+            <div key={title} className="max-w-lg hover:opacity-60 mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-110 cursor-pointer">
               <Image
                 src={image}
                 alt={alt}
