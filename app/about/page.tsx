@@ -38,6 +38,7 @@ export default function AboutUs() {
                     <h1 className="absolute z-10 bg-gray-800 text-white m-1 text-center font-extrabold text-2xl animate-color-change">
                         About Us
                     </h1>
+                    </div>
                 </div>
 
 <h1 className="text-blue-900 text-center font-extrabold text-2xl">Elite Estates: Premier Financial Solutions for Real Estate and Property Management</h1>
@@ -107,6 +108,7 @@ Contact Elite Estates today to discover how they can help you unlock the potenti
         </p>
       </a>
         </div>
+        
       
     );
   };
