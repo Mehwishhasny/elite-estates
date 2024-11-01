@@ -27,7 +27,7 @@ export function Footer() {
                 </div>
 
                 <div className="flex flex-col items-end max-w-sm mt-6">
-                    <h1 className="sm:text-3xl text-lg font-extrabold text-white bg-blue-800 sm:px-2 py-1 rounded sm:mr-16 mr-20">Elite Estates</h1>
+                    <h1 className="sm:text-3xl text-lg font-extrabold text-white bg-blue-800 sm:px-2 py-1 rounded sm:mr-16 mr-24">Elite Estates</h1>
                     <p className="text-sm text-white mt-4 p-4">
                         Elite Estates is a reputable real estate firm committed to assisting individuals and businesses in realizing their property aspirations. We elevate the real estate experience for our clients, empowering them to achieve their goals and secure a prosperous future.
                     </p>
