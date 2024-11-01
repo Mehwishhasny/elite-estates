@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export function Services() {
   return (
-    <div className="min-h-screen bg-white flex flex-col justify-center items-center sm:ml-64 max-w-6xl sm:mb-10 sm:mx-0 mx-4">
+    <div className="min-h-screen bg-white flex flex-col justify-center items-center sm:ml-64 max-w-6xl sm:mb-10 sm:mx-0 mx-1">
       <h1 className="text-blue-800 font-bold sm:text-3xl text-xl mt-10 text-center">
         OUR EXPERT BUSINESS OFFERINGS
       </h1>
@@ -14,7 +14,7 @@ export function Services() {
 
     
         <div className="flex flex-col md:flex-row items-center">
-          <div className="relative max-w-lg bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden md:mr-6">
+          <div className="relative max-w-lg bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden md:mr-6 sm:mx-0 mx-4">
             <Image
               src="/images/services.jpg"
               alt="Services"
@@ -50,7 +50,7 @@ export function Services() {
           </button>
         </div>
 
-        <div className="relative max-w-lg bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden md:mr-6 order-1 md:order-2">
+        <div className="relative max-w-lg sm:mx-0 mx-4 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden md:mr-6 order-1 md:order-2">
           <Image
             src="/images/approach.jpeg"
             alt="Our Approach"
@@ -67,7 +67,7 @@ export function Services() {
 
     
       <div className="flex flex-col md:flex-row items-center mt-12">
-        <div className="relative max-w-lg bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden md:mr-6 order-1">
+        <div className="relative max-w-lg sm:mx-0 mx-4 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden md:mr-6 order-1">
           <Image
             src="/images/results.jpg"
             alt="Results"
